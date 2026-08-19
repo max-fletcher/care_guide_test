@@ -43,7 +43,8 @@ export class AuthService {
       user: {
         id: createdUser.id,
         name: createdUser.name,
-        email: createdUser.email
+        email: createdUser.email,
+        role: createdUser.role
       }
     }
   }
@@ -67,7 +68,8 @@ export class AuthService {
       user: {
         id: user.id,
         email: user.email,
-        name: user.name
+        name: user.name,
+        role: user.role
       }
     }
   }

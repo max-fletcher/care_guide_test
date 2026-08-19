@@ -21,8 +21,7 @@ export const UpdateUserSchema = z.object({
     .min(8, 'Password must be at least 8 characters')
     .max(50)
     .optional(),
-  role: z.enum(TRBACRoles).default(TRBACRoles.USER).optional(),
-  interests: z.array(z.string().min(1)).default([]).optional()
+  role: z.enum(TRBACRoles).default(TRBACRoles.USER).optional()
 })
 
 export type TUpdateUserZodValDto = z.infer<typeof UpdateUserSchema>
