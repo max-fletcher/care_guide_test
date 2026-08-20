@@ -59,16 +59,8 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="flex items-center">
-              <Image
-                className="w-10 mr-3 rounded-full border-2 border-rest-blue"
-                src={userSession?.user.avatar ?? `/images/avatars/people1.png`}
-                width={150}
-                height={150}
-                alt="Profile avatar"
-              />
-              <p>
-                {userSession?.user.firstName} {userSession?.user.lastName}
-              </p>
+              <Image className="w-10 mr-3 rounded-full border-2 border-rest-blue" src={`/images/avatars/people1.png`} width={150} height={150} alt="Profile avatar" />
+              <p>{userSession?.user.name}</p>
               <button className="ml-3">
                 <ArrowDownIcon />
               </button>
